@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="649.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionnominas.NominaController">
+    <tabs>
+        <Tab text="Registro">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="400.0">
+                    <children>
+                        <Label layoutX="25.0" layoutY="18.0" text="Nombre:" />
+                        <TextField fx:id="tNombre" layoutX="83.0" layoutY="14.0" />
+                        <Label layoutX="25.0" layoutY="48.0" text="Apellido:" />
+                        <TextField fx:id="tApellido" layoutX="83.0" layoutY="44.0" />
+                        <Label layoutX="28.0" layoutY="76.0" text="Cargo:" />
+                        <TextField fx:id="tCargo" layoutX="83.0" layoutY="73.0" />
+                        <Label layoutX="27.0" layoutY="104.0" text="Salario:" />
+                        <TextField fx:id="tSalario" layoutX="83.0" layoutY="101.0" />
+                        <Label layoutX="28.0" layoutY="134.0" text="Cedula:" />
+                        <TextField fx:id="tCedula" layoutX="83.0" layoutY="132.0" />
+                        <Label layoutX="34.0" layoutY="163.0" text="Area:" />
+                        <TextField fx:id="tArea" layoutX="83.0" layoutY="164.0" />
+                        <Label layoutX="399.0" layoutY="21.0" text="Banco:" />
+                        <ComboBox fx:id="cBanco" layoutX="348.0" layoutY="56.0" prefWidth="150.0" />
+                        <Label layoutX="378.0" layoutY="121.0" text="Tipo de cuenta:" />
+                        <ComboBox fx:id="cCuenta" layoutX="348.0" layoutY="151.0" prefWidth="150.0" />
+                        <Label layoutX="15.0" layoutY="204.0" text="No. de cuenta:" />
+                        <TextField fx:id="tCuenta" layoutX="96.0" layoutY="201.0" />
+                        <Button fx:id="bRegistrar" layoutX="25.0" layoutY="259.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="69.0" text="Registrar" />
+                        <Button fx:id="bLimpiar" layoutX="187.0" layoutY="259.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="66.0" text="Limpiar" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Nomina">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="424.0" prefWidth="679.0">
+                    <children>
+                        <TableView fx:id="TablaView" layoutY="-1.0" prefHeight="372.0" prefWidth="649.0">
+                            <columns>
+                                <TableColumn fx:id="coNombre" prefWidth="75.0" text="Nombre" />
+                                <TableColumn fx:id="coApellido" prefWidth="75.0" text="Apellido" />
+                                <TableColumn fx:id="coCargo" prefWidth="75.0" text="Cargo" />
+                                <TableColumn fx:id="coArea" prefWidth="75.0" text="Area" />
+                                <TableColumn fx:id="coCedula" prefWidth="75.0" text="Cedula" />
+                                <TableColumn fx:id="coBanco" prefWidth="75.0 " text="Banco" />
+                                <TableColumn fx:id="coSalarioBruto" prefWidth="75.0" text="Salario bruto" />
+                                <TableColumn fx:id="coSalarioNeto" prefWidth="75.0" text="Salario neto" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
